@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FeedList</key>
+	<string>http://www.devred.net/newsfeed/feedservice.aspx/GetNewsSource?countryId=%@</string>
+	<key>NewsFeed</key>
+	<string>http://www.devred.net/newsfeed/feedservice.aspx/GetNewsFeed?newsSourceId=%@</string>
+	<key>CountryList</key>
+	<string>http://www.devred.net/newsfeed/feedservice.aspx/GetCountries</string>
+</dict>
+</plist>
