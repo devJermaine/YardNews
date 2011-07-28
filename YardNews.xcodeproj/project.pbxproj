@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CE136EC713BBDE8800DE3782 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = CE136EC513BBDE8800DE3782 /* email.png */; };
 		CE136EC813BBDE8800DE3782 /* sms.png in Resources */ = {isa = PBXBuildFile; fileRef = CE136EC613BBDE8800DE3782 /* sms.png */; };
+		CE1F2CAA13E1E44700E1B40E /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1F2CA813E1E44700E1B40E /* DisplayViewController.m */; };
+		CE1F2CAB13E1E44700E1B40E /* DisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1F2CA913E1E44700E1B40E /* DisplayViewController.xib */; };
 		CE8BDE2413894D500066AAD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8BDE2313894D500066AAD1 /* UIKit.framework */; };
 		CE8BDE2613894D500066AAD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8BDE2513894D500066AAD1 /* Foundation.framework */; };
 		CE8BDE2813894D500066AAD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8BDE2713894D500066AAD1 /* CoreGraphics.framework */; };
@@ -68,6 +70,9 @@
 /* Begin PBXFileReference section */
 		CE136EC513BBDE8800DE3782 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		CE136EC613BBDE8800DE3782 /* sms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sms.png; sourceTree = "<group>"; };
+		CE1F2CA713E1E44700E1B40E /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		CE1F2CA813E1E44700E1B40E /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
+		CE1F2CA913E1E44700E1B40E /* DisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayViewController.xib; sourceTree = "<group>"; };
 		CE8BDE1F13894D500066AAD1 /* YardNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YardNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8BDE2313894D500066AAD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE8BDE2513894D500066AAD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -369,6 +374,8 @@
 				CE8BDE5F13894E840066AAD1 /* HomeViewController.m */,
 				CE8BDE8613894E840066AAD1 /* NewsFeedViewController.h */,
 				CE8BDE8713894E840066AAD1 /* NewsFeedViewController.m */,
+				CE1F2CA713E1E44700E1B40E /* DisplayViewController.h */,
+				CE1F2CA813E1E44700E1B40E /* DisplayViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -386,6 +393,7 @@
 		CE8BDEB613894F040066AAD1 /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				CE1F2CA913E1E44700E1B40E /* DisplayViewController.xib */,
 				CE8BDE5613894E840066AAD1 /* BrowserViewController.xib */,
 				CE8BDE6013894E840066AAD1 /* HomeViewController.xib */,
 				CE8BDE8813894E840066AAD1 /* NewsFeedViewController.xib */,
@@ -496,6 +504,7 @@
 				CE9296F513AAE72100B22CE7 /* Default@2x.png in Resources */,
 				CE136EC713BBDE8800DE3782 /* email.png in Resources */,
 				CE136EC813BBDE8800DE3782 /* sms.png in Resources */,
+				CE1F2CAB13E1E44700E1B40E /* DisplayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +537,7 @@
 				CE8BDEAB13894E850066AAD1 /* NewsFeedViewCell.m in Sources */,
 				CE8BDEAC13894E850066AAD1 /* NewsFeedViewController.m in Sources */,
 				CE8BDEB113894E850066AAD1 /* WebServiceAPI.m in Sources */,
+				CE1F2CAA13E1E44700E1B40E /* DisplayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

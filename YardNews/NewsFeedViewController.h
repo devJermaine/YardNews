@@ -10,12 +10,13 @@
 #import "BaseViewController.h"
 #import "BrowserViewController.h"
 #import "FeedList.h"
+#import "DisplayViewController.h"
 
 @protocol NewsFeedViewControllerDelegate
 - (void)closeBrowser;
 @end
 
-@interface NewsFeedViewController : BaseViewController <BrowserViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface NewsFeedViewController : BaseViewController <DisplayViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 {
     UIActivityIndicatorView *activityIndicator;
     UINavigationBar *navBar;

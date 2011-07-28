@@ -24,9 +24,6 @@
     
     newsLists = [[NSMutableArray alloc] init];
     
-    //activityIndicator.hidesWhenStopped = YES;
-    //[activityIndicator startAnimating];
-    
     UIButton *button = [self buildButton:@"Close" color:[UIColor blackColor] backgroundColor:[UIColor clearColor] frame:CGRectMake(self.view.frame.size.width-60,10,50,26) font:[UIFont fontWithName:@"Helvetica" size:12] align:UIControlContentHorizontalAlignmentCenter target:self selector:@selector(closeView:)];
     [navBar addSubview:button];
     
@@ -149,13 +146,14 @@
     NewsFeedItem *newsFeed = [[[NewsFeedItem alloc] init] autorelease];
     newsFeed = [newsLists objectAtIndex:indexPath.row];
     
-    BrowserViewController *browser = [[[BrowserViewController alloc] init] autorelease];
-    browser.delegate = self;
-    browser.viewUrl = newsFeed.link;
-    browser.viewTitle = feedList.name;
-    browser.storyTitle = newsFeed.title;
+    DisplayViewController *display = [[[DisplayViewController alloc] init] autorelease];
+    display.delegate = self;
+    display.storyUrl = newsFeed.link;
+    display.storyTitle = newsFeed.title;
+    display.viewTitle = feedList.name;
+    display.storyBody = newsFeed.description;
     
-    [self presentModalViewController:browser animated:YES];
+    [self presentModalViewController:display animated:YES];
 }
 
 -(void)closeBrowser
