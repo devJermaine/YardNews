@@ -629,6 +629,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Jermaine McCarthy";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jermaine McCarthy";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YardNews/YardNews-Prefix.pch";
@@ -640,6 +641,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "402EEEB1-22B8-43D4-9448-5E5E382484C7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "402EEEB1-22B8-43D4-9448-5E5E382484C7";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
