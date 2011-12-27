@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-#import "NewsFeedViewController.h"
 
-@interface HomeViewController : BaseViewController <NewsFeedViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface HomeViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
 {
     NSMutableArray *feedLists;
     UITableView *homeTable;
     UIActivityIndicatorView *activityIndicator;
 }
 
+@property (nonatomic, retain) NSMutableArray *feedLists;
 @property (nonatomic, retain) IBOutlet UITableView *homeTable;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
 

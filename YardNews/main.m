@@ -2,7 +2,7 @@
 //  main.m
 //  YardNews
 //
-//  Created by user on 5/22/11.
+//  Created by jmccarthy on 12/27/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 

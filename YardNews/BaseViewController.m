@@ -16,7 +16,7 @@
 - (void)adMobDisplay
 {
     // Create a view of the standard size at the bottom of the screen.
-    int bannerYLocation = self.view.frame.size.height - GAD_SIZE_320x50.height;
+    int bannerYLocation = 360;//self.view.frame.size.height - GAD_SIZE_320x50.height;
     bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, bannerYLocation, GAD_SIZE_320x50.width, GAD_SIZE_320x50.height)];
     
     // Specify the ad's "unit identifier." This is your AdMob Publisher ID.

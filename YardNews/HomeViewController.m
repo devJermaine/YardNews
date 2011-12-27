@@ -9,10 +9,11 @@
 #import "HomeViewController.h"
 #import "FeedList.h"
 #import "HomeViewCell.h"
+#import "BrowserViewController.h"
 
 @implementation HomeViewController
 
-@synthesize homeTable, activityIndicator;
+@synthesize homeTable, activityIndicator, feedLists;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +31,7 @@
 
 - (void)dealloc
 {
-    [feedLists release];
+    //[feedLists release];
     [super dealloc];
 }
 
@@ -39,6 +40,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    feedLists = [[NSMutableArray alloc] init];
     
     if (![feedLists count])
     {
@@ -101,10 +104,24 @@
     FeedList *selItem = [[[FeedList alloc] init] autorelease];
     selItem = [feedLists objectAtIndex:indexPath.row];
     
-    NewsFeedViewController *details = [[[NewsFeedViewController alloc] initWithFeedList:selItem] autorelease];
-    details.delegate = self;
+    NSString *strURL = [NSString stringWithFormat:@"http://www.devred.net/yardnews/Home.aspx/?feedId=%@", selItem.feedId];
     
-    [self presentModalViewController:details animated:YES];
+    NSLog(@"%@", strURL);
+    
+    BrowserViewController *browser = [[BrowserViewController alloc] init];
+    browser.viewUrl = strURL;
+    
+    //[self.view addSubview:browser.view];
+    
+    self.tabBarController.selectedViewController = browser;
+    
+    //NewsFeedViewController *details = [[[NewsFeedViewController alloc] initWithFeedList:selItem] autorelease];
+    //details.delegate = self;
+    
+    //[self presentModalViewController:details animated:YES];
+    
+    //MainViewController *mainD = [[[MainViewController alloc] init] autorelease];
+    //[self.view addSubview:mainD.view];
 }
 
 -(void)closeBrowser

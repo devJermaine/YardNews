@@ -2,7 +2,7 @@
 //  YardNewsAppDelegate.m
 //  YardNews
 //
-//  Created by user on 5/22/11.
+//  Created by jmccarthy on 12/27/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
@@ -11,23 +11,15 @@
 @implementation YardNewsAppDelegate
 
 
-@synthesize window=_window, myController;
+@synthesize window=_window;
+
+@synthesize tabBarController=_tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    HomeViewController *aController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:[NSBundle mainBundle]];
-    
-    [self setMyController:aController];
-    
-    [aController release];
-    
-    UIView *myView = [myController view];
-    
-    myView.frame = CGRectMake(_window.frame.origin.x, _window.frame.origin.y + 20, _window.frame.size.width, _window.frame.size.height);
-    
-    [_window addSubview:myView];
-    
+    // Add the tab bar controller's current view as a subview of the window
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -74,7 +66,22 @@
 - (void)dealloc
 {
     [_window release];
+    [_tabBarController release];
     [super dealloc];
 }
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+}
+*/
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+{
+}
+*/
 
 @end

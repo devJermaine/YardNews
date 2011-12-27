@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE8BDE1E13894D500066AAD1"
+               BlueprintIdentifier = "CE52982714AA62BC009BBF0C"
                BuildableName = "YardNews.app"
                BlueprintName = "YardNews"
                ReferencedContainer = "container:YardNews.xcodeproj">
@@ -40,7 +40,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE8BDE1E13894D500066AAD1"
+            BlueprintIdentifier = "CE52982714AA62BC009BBF0C"
             BuildableName = "YardNews.app"
             BlueprintName = "YardNews"
             ReferencedContainer = "container:YardNews.xcodeproj">
@@ -59,7 +59,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE8BDE1E13894D500066AAD1"
+            BlueprintIdentifier = "CE52982714AA62BC009BBF0C"
             BuildableName = "YardNews.app"
             BlueprintName = "YardNews"
             ReferencedContainer = "container:YardNews.xcodeproj">
