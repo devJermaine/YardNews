@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE444D4814AA7C810070916B /* Icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D4714AA7C810070916B /* Icon_114.png */; };
+		CE444D4B14AA7C9B0070916B /* Icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D4A14AA7C9B0070916B /* Icon_57.png */; };
+		CE444D4D14AA7CB60070916B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D4C14AA7CB60070916B /* Default@2x.png */; };
+		CE444D4F14AA7CBF0070916B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D4E14AA7CBF0070916B /* Default.png */; };
+		CE444D5114AA7D4F0070916B /* HomeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D5014AA7D4F0070916B /* HomeLogo.png */; };
+		CE444D5414AA7E2D0070916B /* icon_home.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D5214AA7E2D0070916B /* icon_home.png */; };
+		CE444D5514AA7E2D0070916B /* icon_book.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D5314AA7E2D0070916B /* icon_book.png */; };
 		CE50D69914AA66C100F2B403 /* WebServiceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50D67C14AA66C000F2B403 /* WebServiceAPI.m */; };
 		CE50D69A14AA66C100F2B403 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50D68014AA66C000F2B403 /* CDataScanner.m */; };
 		CE50D69B14AA66C100F2B403 /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50D68314AA66C000F2B403 /* CFilteringJSONSerializer.m */; };
@@ -47,6 +54,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE444D4714AA7C810070916B /* Icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_114.png; sourceTree = "<group>"; };
+		CE444D4A14AA7C9B0070916B /* Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_57.png; sourceTree = "<group>"; };
+		CE444D4C14AA7CB60070916B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE444D4E14AA7CBF0070916B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE444D5014AA7D4F0070916B /* HomeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HomeLogo.png; path = YardNews/HomeLogo.png; sourceTree = "<group>"; };
+		CE444D5214AA7E2D0070916B /* icon_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_home.png; path = YardNews/icon_home.png; sourceTree = "<group>"; };
+		CE444D5314AA7E2D0070916B /* icon_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_book.png; path = YardNews/icon_book.png; sourceTree = "<group>"; };
 		CE50D67C14AA66C000F2B403 /* WebServiceAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceAPI.m; sourceTree = "<group>"; };
 		CE50D67D14AA66C000F2B403 /* WebServiceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceAPI.h; sourceTree = "<group>"; };
 		CE50D67F14AA66C000F2B403 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
@@ -232,6 +246,13 @@
 		CE52981D14AA62BC009BBF0C = {
 			isa = PBXGroup;
 			children = (
+				CE444D5214AA7E2D0070916B /* icon_home.png */,
+				CE444D5314AA7E2D0070916B /* icon_book.png */,
+				CE444D5014AA7D4F0070916B /* HomeLogo.png */,
+				CE444D4E14AA7CBF0070916B /* Default.png */,
+				CE444D4C14AA7CB60070916B /* Default@2x.png */,
+				CE444D4A14AA7C9B0070916B /* Icon_57.png */,
+				CE444D4714AA7C810070916B /* Icon_114.png */,
 				CE52983214AA62BC009BBF0C /* YardNews */,
 				CE52982B14AA62BC009BBF0C /* Frameworks */,
 				CE52982914AA62BC009BBF0C /* Products */,
@@ -351,6 +372,13 @@
 				CE50D6B014AA66D800F2B403 /* README.txt in Resources */,
 				CE50D6C114AA696900F2B403 /* BrowserViewController.xib in Resources */,
 				CE50D6D114AA6E5A00F2B403 /* HomeViewController.xib in Resources */,
+				CE444D4814AA7C810070916B /* Icon_114.png in Resources */,
+				CE444D4B14AA7C9B0070916B /* Icon_57.png in Resources */,
+				CE444D4D14AA7CB60070916B /* Default@2x.png in Resources */,
+				CE444D4F14AA7CBF0070916B /* Default.png in Resources */,
+				CE444D5114AA7D4F0070916B /* HomeLogo.png in Resources */,
+				CE444D5414AA7E2D0070916B /* icon_home.png in Resources */,
+				CE444D5514AA7E2D0070916B /* icon_book.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

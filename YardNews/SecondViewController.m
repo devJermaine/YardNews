@@ -49,4 +49,65 @@
     [super dealloc];
 }
 
+- (IBAction)submitSite:(id)sender
+{
+    // Sanity check - is email configured?
+	if ([MFMailComposeViewController canSendMail] == NO)	{
+		NSString *title = NSLocalizedString(@"Unable to Send eMail", @"eMail not configured title");
+		NSString *message = NSLocalizedString(@"Please configure at least one email account on your device.", @"eMail not configured message");
+		UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:NSLocalizedString(@"OK",@"OK Button") otherButtonTitles:nil] autorelease];
+		[alert show];
+		return;
+	}
+	
+    //Generate Message
+    NSString *subject;
+    subject = @"YardNews: New Site Request";
+    
+    NSArray *arr = [NSArray arrayWithObject:@"yardnews@devred.net"];
+    
+	// Spark up the email view
+	MFMailComposeViewController *mailController = [[[MFMailComposeViewController alloc] init] autorelease];
+	mailController.mailComposeDelegate = self;
+	mailController.modalPresentationStyle = UIModalPresentationFormSheet;
+    [mailController setToRecipients:arr];
+    [mailController setSubject:subject];
+    [mailController setMessageBody:@"Site to add: " isHTML:NO];
+    [mailController setEditing:YES];
+    [self presentModalViewController:mailController animated:YES];
+}
+
+- (IBAction)submitError:(id)sender
+{
+    // Sanity check - is email configured?
+	if ([MFMailComposeViewController canSendMail] == NO)	{
+		NSString *title = NSLocalizedString(@"Unable to Send eMail", @"eMail not configured title");
+		NSString *message = NSLocalizedString(@"Please configure at least one email account on your device.", @"eMail not configured message");
+		UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:NSLocalizedString(@"OK",@"OK Button") otherButtonTitles:nil] autorelease];
+		[alert show];
+		return;
+	}
+	
+    //Generate Message
+    NSString *subject;
+    subject = @"YardNews: Error";
+    
+    NSArray *arr = [NSArray arrayWithObject:@"yardnews@devred.net"];
+    
+	// Spark up the email view
+	MFMailComposeViewController *mailController = [[[MFMailComposeViewController alloc] init] autorelease];
+	mailController.mailComposeDelegate = self;
+	mailController.modalPresentationStyle = UIModalPresentationFormSheet;
+    [mailController setToRecipients:arr];
+    [mailController setSubject:subject];
+    [mailController setMessageBody:@"Error encountered: " isHTML:NO];
+    [mailController setEditing:YES];
+    [self presentModalViewController:mailController animated:YES];
+}
+
+-(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 @end

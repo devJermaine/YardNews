@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import "BaseViewController.h"
 
 
-@interface SecondViewController : UIViewController {
+@interface SecondViewController : BaseViewController <MFMailComposeViewControllerDelegate> {
     
 }
+
+- (IBAction)submitSite:(id)sender;
+- (IBAction)submitError:(id)sender;
 
 @end
