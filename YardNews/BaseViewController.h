@@ -15,8 +15,10 @@
 @interface BaseViewController : UIViewController {
     GADBannerView *bannerView;
     WebServiceAPI *webApi;
+    NSString *strURL;
 }
 
+@property (nonatomic, retain) NSString *strURL;
 @property (nonatomic, assign) WebServiceAPI *webApi;
 
 - (void)viewDidLoadWithoutAd;

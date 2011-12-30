@@ -10,7 +10,7 @@
 
 @implementation BrowserViewController
 
-@synthesize webView, viewUrl;
+@synthesize webView;
 
 - (id)init
 {
@@ -21,6 +21,15 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    return self;
+}
+
+- (id)initWithUrl:(NSString*)url
+{
+    self = [self init];
+    
+    strURL = url;
     
     return self;
 }
@@ -45,7 +54,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    NSURL *nsurl = [NSURL URLWithString:self.viewUrl];
+    NSURL *nsurl = [NSURL URLWithString:self.strURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:nsurl];
     
     [webView loadRequest:request];

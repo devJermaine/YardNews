@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE34961E14AE63EB00B7B018 /* icon_download.png in Resources */ = {isa = PBXBuildFile; fileRef = CE34961B14AE63EB00B7B018 /* icon_download.png */; };
+		CE34961F14AE63EB00B7B018 /* icon_folder_bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = CE34961C14AE63EB00B7B018 /* icon_folder_bookmark.png */; };
+		CE34962014AE63EB00B7B018 /* icon_key.png in Resources */ = {isa = PBXBuildFile; fileRef = CE34961D14AE63EB00B7B018 /* icon_key.png */; };
 		CE444D4814AA7C810070916B /* Icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D4714AA7C810070916B /* Icon_114.png */; };
 		CE444D4B14AA7C9B0070916B /* Icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D4A14AA7C9B0070916B /* Icon_57.png */; };
 		CE444D4D14AA7CB60070916B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE444D4C14AA7CB60070916B /* Default@2x.png */; };
@@ -54,6 +57,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE34961B14AE63EB00B7B018 /* icon_download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_download.png; path = YardNews/icon_download.png; sourceTree = "<group>"; };
+		CE34961C14AE63EB00B7B018 /* icon_folder_bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_folder_bookmark.png; path = YardNews/icon_folder_bookmark.png; sourceTree = "<group>"; };
+		CE34961D14AE63EB00B7B018 /* icon_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_key.png; path = YardNews/icon_key.png; sourceTree = "<group>"; };
 		CE444D4714AA7C810070916B /* Icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_114.png; sourceTree = "<group>"; };
 		CE444D4A14AA7C9B0070916B /* Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_57.png; sourceTree = "<group>"; };
 		CE444D4C14AA7CB60070916B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -246,6 +252,9 @@
 		CE52981D14AA62BC009BBF0C = {
 			isa = PBXGroup;
 			children = (
+				CE34961B14AE63EB00B7B018 /* icon_download.png */,
+				CE34961C14AE63EB00B7B018 /* icon_folder_bookmark.png */,
+				CE34961D14AE63EB00B7B018 /* icon_key.png */,
 				CE444D5214AA7E2D0070916B /* icon_home.png */,
 				CE444D5314AA7E2D0070916B /* icon_book.png */,
 				CE444D5014AA7D4F0070916B /* HomeLogo.png */,
@@ -379,6 +388,9 @@
 				CE444D5114AA7D4F0070916B /* HomeLogo.png in Resources */,
 				CE444D5414AA7E2D0070916B /* icon_home.png in Resources */,
 				CE444D5514AA7E2D0070916B /* icon_book.png in Resources */,
+				CE34961E14AE63EB00B7B018 /* icon_download.png in Resources */,
+				CE34961F14AE63EB00B7B018 /* icon_folder_bookmark.png in Resources */,
+				CE34962014AE63EB00B7B018 /* icon_key.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +459,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jermaine McCarthy (D79DK3KJ85)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jermaine McCarthy (D79DK3KJ85)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -456,6 +469,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "07D45D46-8BEC-4BB1-BCAE-E57089041227";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "07D45D46-8BEC-4BB1-BCAE-E57089041227";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -464,13 +479,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jermaine McCarthy (D79DK3KJ85)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jermaine McCarthy (D79DK3KJ85)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "07D45D46-8BEC-4BB1-BCAE-E57089041227";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "07D45D46-8BEC-4BB1-BCAE-E57089041227";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

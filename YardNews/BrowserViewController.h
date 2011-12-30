@@ -11,10 +11,12 @@
 
 @interface BrowserViewController : BaseViewController {
     UIWebView *webView;
-    NSString *viewUrl;
+    //NSString *viewUrl;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
-@property (readwrite, nonatomic, retain) NSString *viewUrl;
+//@property (readwrite, nonatomic, retain) NSString *viewUrl;
+
+- (id)initWithUrl:(NSString*)url;
 
 @end

@@ -11,7 +11,7 @@
 
 @implementation BaseViewController
 
-@synthesize webApi;
+@synthesize webApi, strURL;
 
 - (void)adMobDisplay
 {

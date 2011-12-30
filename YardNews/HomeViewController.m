@@ -104,24 +104,12 @@
     FeedList *selItem = [[[FeedList alloc] init] autorelease];
     selItem = [feedLists objectAtIndex:indexPath.row];
     
-    NSString *strURL = [NSString stringWithFormat:@"http://www.devred.net/yardnews/Home.aspx/?feedId=%@", selItem.feedId];
+    strURL = [NSString stringWithFormat:@"http://www.devred.net/yardnews/Home.aspx/?feedId=%@", selItem.feedId];
     
-    NSLog(@"%@", strURL);
-    
-    BrowserViewController *browser = [[BrowserViewController alloc] init];
-    browser.viewUrl = strURL;
-    
-    //[self.view addSubview:browser.view];
-    
+    BrowserViewController *browser = [self.tabBarController.viewControllers objectAtIndex:1];
+    [browser initWithUrl:strURL];
+    [browser viewDidLoad];
     self.tabBarController.selectedViewController = browser;
-    
-    //NewsFeedViewController *details = [[[NewsFeedViewController alloc] initWithFeedList:selItem] autorelease];
-    //details.delegate = self;
-    
-    //[self presentModalViewController:details animated:YES];
-    
-    //MainViewController *mainD = [[[MainViewController alloc] init] autorelease];
-    //[self.view addSubview:mainD.view];
 }
 
 -(void)closeBrowser
