@@ -104,7 +104,7 @@
     FeedList *selItem = [[[FeedList alloc] init] autorelease];
     selItem = [feedLists objectAtIndex:indexPath.row];
     
-    strURL = [NSString stringWithFormat:@"http://www.devred.net/yardnews/Home.aspx/?feedId=%@", selItem.feedId];
+    strURL = [NSString stringWithFormat:@"http://www.devred.net/yardnews/Home.aspx/?feedId=%@&device=ios", selItem.feedId];
     
     BrowserViewController *browser = [self.tabBarController.viewControllers objectAtIndex:1];
     [browser initWithUrl:strURL];

@@ -459,8 +459,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jermaine McCarthy (D79DK3KJ85)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jermaine McCarthy (D79DK3KJ85)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jermaine McCarthy";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jermaine McCarthy";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -469,8 +469,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PROVISIONING_PROFILE = "07D45D46-8BEC-4BB1-BCAE-E57089041227";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "07D45D46-8BEC-4BB1-BCAE-E57089041227";
+				PROVISIONING_PROFILE = "3058B93D-5A68-4365-A0BF-81C8584ECDC3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3058B93D-5A68-4365-A0BF-81C8584ECDC3";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -479,16 +479,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jermaine McCarthy (D79DK3KJ85)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jermaine McCarthy (D79DK3KJ85)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jermaine McCarthy";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jermaine McCarthy";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "07D45D46-8BEC-4BB1-BCAE-E57089041227";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "07D45D46-8BEC-4BB1-BCAE-E57089041227";
+				PROVISIONING_PROFILE = "3058B93D-5A68-4365-A0BF-81C8584ECDC3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3058B93D-5A68-4365-A0BF-81C8584ECDC3";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -497,6 +497,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jermaine McCarthy";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jermaine McCarthy";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -509,6 +511,8 @@
 					"\"$(SRCROOT)/YardNews/AdMob\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3058B93D-5A68-4365-A0BF-81C8584ECDC3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3058B93D-5A68-4365-A0BF-81C8584ECDC3";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -518,6 +522,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jermaine McCarthy";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jermaine McCarthy";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YardNews/YardNews-Prefix.pch";
@@ -529,6 +535,8 @@
 					"\"$(SRCROOT)/YardNews/AdMob\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3058B93D-5A68-4365-A0BF-81C8584ECDC3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3058B93D-5A68-4365-A0BF-81C8584ECDC3";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

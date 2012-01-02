@@ -29,7 +29,7 @@
 {
     self = [self init];
     
-    strURL = url;
+    self.strURL = url;
     
     return self;
 }
@@ -53,6 +53,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    if (self.strURL == nil)
+    {
+        self.strURL = @"http://www.devred.net/yardnews/Home.aspx/?device=ios";
+    }
     
     NSURL *nsurl = [NSURL URLWithString:self.strURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:nsurl];
